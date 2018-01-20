@@ -1,0 +1,23 @@
+﻿<Page
+    x:Class="App1.VLC"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:vlc="using:VLC">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <vlc:MediaElement Name="vlc" 
+                          Source="http://download.blender.org/peach/bigbuckbunny_movies/big_buck_bunny_480p_surround-fix.avi" 
+                          VerticalAlignment="Center" 
+                          HorizontalAlignment="Center" 
+                          AreTransportControlsEnabled="True"
+                          Width="640"
+                          Height="480"
+                          DoubleTapped="vlc_DoubleTapped"
+                          IsDoubleTapEnabled="True"/>
+
+    </Grid>
+</Page>
